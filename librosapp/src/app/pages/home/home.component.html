@@ -4,8 +4,11 @@
 
   <div class="container">
     <div *ngFor="let libro of libros; let i = index" class="row">
+        <div class="col-sm">
+            {{libro.id}}
+          </div>
       <div class="col-sm">
-        {{libro.libro}}
+        {{libro.titulo}}
       </div>
       <div class="col-sm">
         {{libro.autor}}
