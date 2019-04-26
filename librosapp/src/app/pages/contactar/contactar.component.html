@@ -1,0 +1,18 @@
+<h1>FORMULARIO CONTACTAR</h1>
+<div class="col-md-6 mb-6">
+   
+   
+   <div class="form-group">
+    <label for="inputTitle">ASUNTO</label>
+    <input type="text" class="form-control" id="inputTitle" placeholder="nombre" [(ngModel)]="correo.subject">
+   </div>
+   <div class="form-group">
+    <label for="inputTitle">CORREO</label>
+    <input type="email" class="form-control" id="inputTitle" placeholder="email@servicio.algo" [(ngModel)]="correo.email">
+   </div>
+   <div class="form-group">
+    <label for="exampleFormControlTextarea1">Example textarea</label>
+    <textarea class="form-control" id="Textarea1" rows="6" cols="10"[(ngModel)]="correo.text"></textarea>
+  </div>
+     <button type="" class="btn btn-primary" (click)="enviar();">ENVIAR</button>
+ </div>

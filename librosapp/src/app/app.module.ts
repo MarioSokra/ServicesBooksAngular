@@ -11,6 +11,7 @@ import { InfantilComponent } from './pages/infantil/infantil.component';
 import { TerrorComponent } from './pages/terror/terror.component';
 import { NuevoLibroComponent } from './pages/nuevo-libro/nuevo-libro.component';
 import { FormsModule } from '@angular/forms';
+import { ContactarComponent } from './pages/contactar/contactar.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,6 +21,7 @@ import { FormsModule } from '@angular/forms';
     InfantilComponent,
     TerrorComponent,
     NuevoLibroComponent,
+    ContactarComponent,
     
   ],
   imports: [
