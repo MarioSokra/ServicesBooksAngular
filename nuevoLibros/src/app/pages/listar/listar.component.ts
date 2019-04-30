@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BooksService } from 'src/app/services/books.service';
 
 @Component({
   selector: 'app-listar',
@@ -6,10 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./listar.component.css']
 })
 export class ListarComponent implements OnInit {
-
-  constructor() { }
-
+  search:string="";
+  list:any;
+  constructor(private bookList:BooksService) { }
+ 
   ngOnInit() {
+    this.list  = this.bookList.list;
+ 
   }
-
-}
+ 
+ }
